@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirPods Max Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Apple logo.png" alt="Apple Logo" class="logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li> <!-- Fixed ID case -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <section class="container" id="home">
+      <h1 class="title"><span>Air</span>Pods Max</h1>
+      <img src="Air Pods.png" alt="AirPods Max" class="product-img" />
+      <p>Five fresh colours. Bold sound.</p>
+      <div class="buttons">
+        <button class="learn-btn" onclick="scrollToSection()">Learn More</button>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2 class="features-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>High-Fidelity Audio</h3>
+          <p>Experience rich, immersive sound with custom-built drivers and spatial audio with dynamic head tracking.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Active Noise Cancellation</h3>
+          <p>Blocks out ambient noise for focused listening using advanced computational audio technology.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Transparency Mode</h3>
+          <p>Hear your surroundings clearly when needed—perfect for staying aware while enjoying your music.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Exceptional Comfort</h3>
+          <p>Designed with breathable knit mesh and memory foam ear cushions for a secure yet comfortable fit.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Seamless Integration</h3>
+          <p>Instantly connect to Apple devices and switch between them effortlessly using iCloud syncing.</p>
+        </div>
+        <div class="feature-card">
+          <h3>20-Hour Battery Life</h3>
+          <p>Enjoy up to 20 hours of listening time with Active Noise Cancellation and spatial audio enabled.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (moved above contact for nav consistency) -->
+    <section id="gallery" class="gallery">
+      <h2>AirPods Max Gallery</h2>
+      <div class="gallery-grid">
+        <div class="grid_up">
+          <div class="gallery-item">
+            <img src="SPACE GRAY HEADPHONE.png" alt="AirPods Max Space Gray">
+            <p>Space Gray –  ₹59,900</p>
+          </div>
+          <div class="gallery-item">
+            <img src="SILVER HEADPHONE.png" alt="AirPods Max Silver">
+            <p>Silver –  ₹59,900</p>
+          </div>
+          <div class="gallery-item">
+            <img src="BLUE HEADPHONE.png" alt="AirPods Max Sky Blue">
+            <p>Sky Blue –  ₹59,900</p>
+          </div>
+        </div>
+      <div class="grid_down">
+        <div class="gallery-item">
+          <img src="GREEN HEADPHONE.png" alt="AirPods Max Green">
+          <p>Green –  ₹59,900</p>
+        </div>
+        <div class="gallery-item">
+          <img src="PINK HEADPHONE.png" alt="AirPods Max Pink">
+          <p>Pink –  ₹59,900</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="contact-title">Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 MyBrand. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Optional scroll function if not defined in script.js
+    function scrollToSection() {
+      const features = document.getElementById("features");
+      if (features) features.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
